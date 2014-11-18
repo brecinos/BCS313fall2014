@@ -80,7 +80,7 @@
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - Faro Coffe Shop</p>
+                <p>&copy; <%: DateTime.Now.Year %> - BCS313 Fall 2014. </p>
             </div>
         </div>
     </footer>

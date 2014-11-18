@@ -16,7 +16,7 @@
     <ol class="round">
         <li class="one">
             <h5>Clerk Application</h5>
-            <asp:Button ID="ButtonClerkApplication" runat="server" Text="Cashier" Width="104px" />
+            <asp:Button ID="ButtonClerkApplication" runat="server" Text="Cashier" Width="104px" OnClick="ButtonClerkApplication_Click" />
         </li>
         <li class="two">
             <h5>Assign internet to customer</h5>
