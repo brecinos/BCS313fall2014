@@ -16,7 +16,7 @@ namespace FaroCoffeShop
 
         protected void ButtonClerkApplication_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ClientDataEntry.aspx");
+            Response.Redirect("DataEntriesMenu.aspx");
         }
     }
 }

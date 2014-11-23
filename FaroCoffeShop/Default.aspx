@@ -16,14 +16,12 @@
     <ol class="round">
         <li class="one">
             <h5>Clerk Application</h5>
-            <asp:Button ID="ButtonClerkApplication" runat="server" Text="Cashier" Width="104px" OnClick="ButtonClerkApplication_Click" />
+            <asp:Button ID="ButtonClerkApplication" runat="server" Text="Data Enter" Width="104px" OnClick="ButtonClerkApplication_Click" />
         </li>
         <li class="two">
             <h5>Assign internet to customer</h5>
             <asp:Button ID="ButtonInternetAssignment" runat="server" Text="Intenet" Width="100px" />
         </li>
-        <li class="three">
-            <h5> CRM with Customers</h5>
-        </li>
+        
     </ol>
 </asp:Content>

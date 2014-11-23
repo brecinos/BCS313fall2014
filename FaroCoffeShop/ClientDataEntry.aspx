@@ -34,7 +34,14 @@
     <table>
         <tr>
             <td>
-                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                <asp:GridView ID="GridView1" runat="server"
+                    autogenerateselectbutton="true"
+                    datakeynames="CustomerID"
+                    selectedindex="0">
+
+                    <selectedrowstyle BackColor="lightblue"/>
+
+                </asp:GridView>
             </td>
 
 

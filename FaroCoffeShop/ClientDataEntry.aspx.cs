@@ -19,6 +19,8 @@ namespace FaroCoffeShop
         protected void Button1_Click(object sender, EventArgs e)
         {
             InsertClient();
+            this.TextBox1.Text = "";
+            this.TextBox2.Text = "";
         }
 
 

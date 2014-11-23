@@ -1,12 +1,96 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesFaro">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="DataClassesFaro">
   <DataContextMoniker Name="/DataClassesFaroDataContext" />
   <nestedChildShapes>
-    <classShape Id="0d759f61-dd8d-4686-99eb-27aeb933c745" absoluteBounds="2.875, 1.5, 2, 1.3862939453125">
-      <DataClassMoniker Name="/DataClassesFaroDataContext/Client" />
+    <classShape Id="7661d9f8-cea1-4a35-b43d-4eaa91bc2b0e" absoluteBounds="6.25, 6, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/DataClassesFaroDataContext/Bill" />
       <nestedChildShapes>
-        <elementListCompartment Id="f1d76a05-9aef-4f9f-9ab0-b10b9a839ed8" absoluteBounds="2.89, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="37e80b85-a64e-4e1d-b691-b900176a4353" absoluteBounds="6.2650000000000006, 6.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="6a18a71c-9d15-41c0-b08b-5f1735302ff1" absoluteBounds="3.5, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesFaroDataContext/Client" />
+      <nestedChildShapes>
+        <elementListCompartment Id="745c15d1-5445-4512-a169-d5a824917675" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9dff6058-dcad-4f8f-8e05-4ebffe2f5e29" absoluteBounds="3.5, 4.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataClassesFaroDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47750168-716a-4739-b3f6-5ce11d452272" absoluteBounds="3.515, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d791d9fe-ed1e-46ac-bcba-1af56c51ec00" absoluteBounds="3.5, 6, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/DataClassesFaroDataContext/InternetSession" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1fe6c9e-6087-45a9-8b7f-bfcb73ee16ba" absoluteBounds="3.515, 6.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9a1ffbe-65b9-45c6-9024-8105e8e52fb8" absoluteBounds="6.25, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesFaroDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9cef0fcf-9e98-43fb-8e1b-69f41b2762ad" absoluteBounds="6.265, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a1ff0c2-b5c2-40a9-a349-354fae0e055f" absoluteBounds="9, 0.875, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/DataClassesFaroDataContext/OrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecb89f8e-40dd-4d38-a001-b0e0b82f8540" absoluteBounds="9.015, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35481f94-92cc-4cdc-9028-591a3ebffbbc" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/DataClassesFaroDataContext/Payment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9517484-39e9-4d02-8638-731ab39aa621" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f378ce4-c4e5-42da-b04a-b38a0c2ed188" absoluteBounds="6.25, 3.875, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DataClassesFaroDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d84783a-842d-4901-8dfb-c5fda06ecf11" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.69314697265625); (6.25 : 6.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesFaroDataContext/InternetSession/InternetSession_Bill" />
+      <nodes>
+        <classShapeMoniker Id="d791d9fe-ed1e-46ac-bcba-1af56c51ec00" />
+        <classShapeMoniker Id="7661d9f8-cea1-4a35-b43d-4eaa91bc2b0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.78929768880208); (6.25 : 1.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesFaroDataContext/Client/Client_Order" />
+      <nodes>
+        <classShapeMoniker Id="6a18a71c-9d15-41c0-b08b-5f1735302ff1" />
+        <classShapeMoniker Id="d9a1ffbe-65b9-45c6-9024-8105e8e52fb8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.25); (5.875 : 3.875); (5.875 : 2.21519853320312); (6.25 : 2.21519853320312)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesFaroDataContext/Employee/Employee_Order" />
+      <nodes>
+        <classShapeMoniker Id="9dff6058-dcad-4f8f-8e05-4ebffe2f5e29" />
+        <classShapeMoniker Id="d9a1ffbe-65b9-45c6-9024-8105e8e52fb8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 1.78929768880208); (9 : 1.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesFaroDataContext/Order/Order_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="d9a1ffbe-65b9-45c6-9024-8105e8e52fb8" />
+        <classShapeMoniker Id="9a1ff0c2-b5c2-40a9-a349-354fae0e055f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesFaroDataContext/Payment/Payment_Client" />
+      <nodes>
+        <classShapeMoniker Id="35481f94-92cc-4cdc-9028-591a3ebffbbc" />
+        <classShapeMoniker Id="6a18a71c-9d15-41c0-b08b-5f1735302ff1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4.76044840494792); (10 : 4.76044840494792); (10 : 2.64589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesFaroDataContext/Product/Product_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="6f378ce4-c4e5-42da-b04a-b38a0c2ed188" />
+        <classShapeMoniker Id="9a1ff0c2-b5c2-40a9-a349-354fae0e055f" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>
