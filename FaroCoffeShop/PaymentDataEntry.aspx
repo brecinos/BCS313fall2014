@@ -14,8 +14,8 @@
         
         
         <tr>        
-            <td> <asp:Button ID="Button1" runat="server" Text="Save" Width="80" OnClick="Button1_Click" />          </td>  
-            <td> <asp:Button ID="Button2" runat="server" Text="Delete" Width="80" OnClick="Button1_Click" />          </td>  
+            <td> <asp:Button ID="ButtonSave" runat="server" Text="Save" Width="80" OnClick="ButtonSave_Click"   />          </td>  
+            <td>          </td>  
         </tr>
 
         </table>
@@ -25,7 +25,7 @@
             <td>
                 <asp:GridView ID="GridView1" runat="server"
                     autogenerateselectbutton="true"
-                    datakeynames="CustomerID"
+                    datakeynames="PaymentId"
                     selectedindex="0">
 
                     <selectedrowstyle BackColor="lightblue"/>

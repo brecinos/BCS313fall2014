@@ -11,12 +11,50 @@ namespace FaroCoffeShop
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+                loadData();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        private void loadData()
         {
-
+            var db = new DataClassesFaroDataContext();
+            var datasourcex = db.Employees.ToList();
+            GridView1.DataSource = datasourcex;
+            GridView1.DataBind();
         }
+
+        protected void ButtonSave_Click(object sender, EventArgs e)
+        {
+            InsertEmployee();
+            this.TextBoxName.Text = "";
+        }
+
+
+        private void InsertEmployee() {
+
+            var db = new DataClassesFaroDataContext();
+
+            var employeeVal = this.TextBoxName.Text.Trim();
+
+            try
+            {
+                var newEmployee = new Employee()
+                {
+                    Name = employeeVal
+                };
+                db.Employees.InsertOnSubmit(newEmployee);
+                db.SubmitChanges();
+                loadData();
+            }
+            catch (Exception ex)
+            {
+                var errorx = ex.Message;
+            }
+        
+        }
+
+
+
+        
     }
 }
