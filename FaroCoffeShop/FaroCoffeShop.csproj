@@ -191,6 +191,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="DataEntriesMenu.aspx" />
     <Content Include="EmployeeDataEntry.aspx" />
+    <Content Include="GenerateOrder.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\FARO012.jpg" />
@@ -350,6 +351,13 @@
     </Compile>
     <Compile Include="EmployeeDataEntry.aspx.designer.cs">
       <DependentUpon>EmployeeDataEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateOrder.aspx.cs">
+      <DependentUpon>GenerateOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateOrder.aspx.designer.cs">
+      <DependentUpon>GenerateOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
