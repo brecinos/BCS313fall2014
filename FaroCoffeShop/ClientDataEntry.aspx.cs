@@ -12,7 +12,10 @@ namespace FaroCoffeShop
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
+            { 
                 loadData();
+                DropDownLoad();
+            }
 
         }
 
@@ -27,11 +30,36 @@ namespace FaroCoffeShop
         private void loadData() {
 
             var db = new DataClassesFaroDataContext();
-            var datasourcex = db.Clients.ToList();
+            /*
+            var datasourcex = from p in db.Clients
+                              select new
+                              {
+                                  ,
+
+                              };
+             */
+                
+            var datasourcex  =  db.Clients.ToList();
             GridView1.DataSource = datasourcex;
             GridView1.DataBind();
 
         }
+
+        private void DropDownLoad()
+        {
+
+            var db = new DataClassesFaroDataContext();
+            var datasourcex = db.Payments.ToList();
+            DropDownListPayment.DataSource = datasourcex;
+            DropDownListPayment.DataValueField = "paymentId";
+            DropDownListPayment.DataTextField = "paymentMethod";
+            DropDownListPayment.DataBind();
+
+        }
+
+
+
+
 
         private void InsertClient() 
         {
@@ -39,6 +67,7 @@ namespace FaroCoffeShop
 
             var nameVal = this.TextBox1.Text.Trim();
             var emailVal = this.TextBox2.Text.Trim();
+            var paymentVal = int.Parse(this.DropDownListPayment.SelectedValue);
 
 
             try
@@ -46,7 +75,8 @@ namespace FaroCoffeShop
                 var newClient = new Client()
                 {
                     email = emailVal,
-                    name = nameVal
+                    name = nameVal,
+                    paymentId = paymentVal
                 };
                 db.Clients.InsertOnSubmit(newClient);
                 db.SubmitChanges();

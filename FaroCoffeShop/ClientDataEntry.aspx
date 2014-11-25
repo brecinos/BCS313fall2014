@@ -4,6 +4,13 @@
         .auto-style1 {
             height: 53px;
         }
+        .auto-style2 {
+            width: 157px;
+        }
+        .auto-style3 {
+            height: 53px;
+            width: 157px;
+        }
     </style>
 </asp:Content>
 
@@ -13,19 +20,24 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <table  >
-        <tr>        <td>  <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>         </td>    
+        <tr>        <td class="auto-style2">  <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>         </td>    
                     <td>   <asp:TextBox ID="TextBox1" runat="server" BorderColor="Lime"></asp:TextBox>        </td>
 
 
         </tr>
-        <tr>        <td class="auto-style1"> <asp:Label ID="Label2" runat="server" Text="E-mail"></asp:Label>    </td>           
+        <tr>        <td class="auto-style3"> <asp:Label ID="Label2" runat="server" Text="E-mail"></asp:Label>    </td>           
                     <td class="auto-style1"> <asp:TextBox ID="TextBox2" runat="server" BorderColor="Lime"></asp:TextBox>          </td>
         </tr>
-        <tr>        <td> <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>          </td>  
+        <tr>        <td class="auto-style2"> <asp:Label ID="Label3" runat="server" Text="Payment Method:"></asp:Label> 
+
+                    </td>  
+                    <td>
+                        <asp:DropDownList ID="DropDownListPayment"  AutoPostBack="true"   runat ="server"></asp:DropDownList>
+                    </td>
         </tr>
         
         
-        <tr>        <td> <asp:Button ID="Button1" runat="server" Text="Save Client" OnClick="Button1_Click" />          </td>  
+        <tr>        <td class="auto-style2"> <asp:Button ID="Button1" runat="server" Text="Save Client" OnClick="Button1_Click" Width="144px" />          </td>  
 
         </tr>
 
@@ -36,7 +48,7 @@
             <td>
                 <asp:GridView ID="GridView1" runat="server"
                     autogenerateselectbutton="true"
-                    datakeynames="CustomerID"
+                    datakeynames="idclient"
                     selectedindex="0">
 
                     <selectedrowstyle BackColor="lightblue"/>

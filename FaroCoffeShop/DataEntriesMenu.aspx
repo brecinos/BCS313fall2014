@@ -24,6 +24,11 @@
             <td>  <asp:Button ID="ButtonProduct" runat="server" Text="Product" BorderColor="#9900FF" OnClick="ButtonProduct_Click" />   </td>
        
         </tr>
+
+        <tr>
+          <td>  <asp:Button ID="ButtonGenerateOrder" runat="server" Text="Generate Order" BorderColor="#0066CC" Height="46px" Width="352px" OnClick="ButtonGenerateOrder_Click"  />  </td>
+        </tr>
+
         </table>
 
 

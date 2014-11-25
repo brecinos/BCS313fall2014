@@ -33,5 +33,10 @@ namespace FaroCoffeShop
         {
             Response.Redirect("ProductDataEntry.aspx");
         }
+
+        protected void ButtonGenerateOrder_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("GenerateOrder.aspx");
+        }
     }
 }
