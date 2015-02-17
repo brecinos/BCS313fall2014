@@ -47,7 +47,7 @@
         <tr>
             <td>
                 <asp:GridView ID="GridView1" runat="server"
-                    autogenerateselectbutton="true"
+                    autogenerateselectbutton="false"
                     datakeynames="idclient"
                     selectedindex="0">
 

@@ -18,5 +18,10 @@ namespace FaroCoffeShop
         {
             Response.Redirect("DataEntriesMenu.aspx");
         }
+
+        protected void ButtonInternetAssignment_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InternetSession.aspx");
+        }
     }
 }

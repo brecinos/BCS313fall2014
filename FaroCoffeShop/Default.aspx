@@ -20,7 +20,7 @@
         </li>
         <li class="two">
             <h5>Assign internet to customer</h5>
-            <asp:Button ID="ButtonInternetAssignment" runat="server" Text="Intenet" Width="100px" />
+            <asp:Button ID="ButtonInternetAssignment" runat="server" Text="Intenet" Width="100px" OnClick="ButtonInternetAssignment_Click" />
         </li>
         
     </ol>
